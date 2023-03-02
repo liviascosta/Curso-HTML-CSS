@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #84E1AD;
+    background-color: #C5EBD6;
     margin: 0;
 }
 
@@ -25,10 +25,11 @@ h1{
 
 .header {
     color: white;
-    text-align: center;
+    text-align: center;    
 }
 
 nav {
+    background-color: #1D673D;
     text-align: left;
     color: white;
 }
@@ -59,7 +60,7 @@ p{
     font-size: 14px;
 }
 
-picture > img {
+picture img {
     width: 100%;
 }
 
@@ -90,6 +91,11 @@ footer{
     background-color: #306C4B;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1px;
+}
+
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 footer > p {

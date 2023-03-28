@@ -2,25 +2,76 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One';
+    --fonte3:'Sriracha';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
 header {
     background-color: black;
     color: white;
-    font-family: 'Passion One';
+    font-family: var(--fonte2) ;
     text-align: center;
 }
 
-h1 {
-
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
 }
 
-header a {
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
     color: white;
     text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
 }
 
 body{
-    font-family: 'Sriracha';
+    font-family: var(--fonte3);
 }
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 3.5vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    color: white;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
 
 #img01 {
     background-image: url('/desafios/d012/imagens/background001.jpg');
@@ -32,14 +83,12 @@ body{
     background-image: url('/desafios/d012/imagens/background002.jpg');
 }
 
+
+
 footer {
     background-color: black;
     color: white;
-    font-family: 'Passion One';
+    font-family: var(--fonte2);
     text-align: center;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
+    padding: 10px;
+ }
